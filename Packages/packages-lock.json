@@ -152,6 +152,23 @@
       "dependencies": {},
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.burst-wig": {
+      "version": "file:jp.keijiro.burst-wig",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "jp.keijiro.klak.math": "2.1.0"
+      }
+    },
+    "jp.keijiro.klak.math": {
+      "version": "2.1.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.6"
+      },
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.klak.motion": {
       "version": "1.1.0",
       "depth": 0,

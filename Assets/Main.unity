@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.887017, g: 1.887017, b: 1.887017, a: 1}
+  m_IndirectSpecularColor: {r: 5.206489, g: 6.0545673, b: 0.09421817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -713,6 +713,54 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: f0c563e888d6bf94fb6940e9ba1bfdc3, type: 2}
+--- !u!1 &660468529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660468531}
+  - component: {fileID: 660468530}
+  m_Layer: 0
+  m_Name: Syphon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &660468530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660468529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b79770b2944d4cdeb52083e0a22da31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TargetTexture>k__BackingField: {fileID: 8400000, guid: 480642a8b5f9f4843bea7d3d7394b070, type: 2}
+  <TargetRenderer>k__BackingField: {fileID: 0}
+  <TargetMaterialProperty>k__BackingField: 
+  _serverName: 'KodeLife/KodeLife[Output]'
+--- !u!4 &660468531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660468529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &776195658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2713,3 +2761,4 @@ SceneRoots:
   - {fileID: 1635602238}
   - {fileID: 1440351352}
   - {fileID: 1233297823}
+  - {fileID: 660468531}

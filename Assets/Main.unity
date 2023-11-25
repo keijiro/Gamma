@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.6316443, g: 0.6316443, b: 0.6316443, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1680,11 +1680,11 @@ MonoBehaviour:
   _profile:
     length: 2
     lengthRandomness: 0.3
-    spring: 300
-    damping: 60
+    spring: 250
+    damping: 40
     gravity: {x: 0, y: 0, z: 0}
-    noiseAmplitude: 0.5
-    noiseFrequency: 0.8
+    noiseAmplitude: 0.6
+    noiseFrequency: 1.4
     noiseSpeed: 0.1
 --- !u!4 &1293420500
 Transform:
@@ -2597,7 +2597,7 @@ GameObject:
   - component: {fileID: 1988023644}
   - component: {fileID: 1988023645}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Distance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

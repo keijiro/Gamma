@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using BurstWig;
+using Klak.Math;
 
 namespace Gamma {
 
@@ -28,12 +29,11 @@ public sealed class WigInputHandler : MonoBehaviour
     }
 
     void OnPerformed(InputAction.CallbackContext ctx)
-        => _active = !_active;
+      => _active = !_active;
 
     void Update()
     {
-        var speed = Speed * (_active ? 1 : -1);
-        _param = Mathf.Clamp01(_param + speed * Time.deltaTime);
+        _param = ExpTween.Step(_param, _active ? 1 : 0, Speed);
         Target.Length = Mathf.Lerp(Length0, Length1, _param);
     }
 }

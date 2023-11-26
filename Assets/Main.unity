@@ -1341,6 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1635602237}
+  Speed: 2
   Action:
     m_Name: Action
     m_Type: 0
@@ -2017,6 +2018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 671969915}
+  Speed: 2
   Action:
     m_Name: Action
     m_Type: 0
@@ -2184,6 +2186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1233297822}
+  Speed: 2
   Action:
     m_Name: Action
     m_Type: 0
@@ -2644,6 +2647,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400040, guid: b0f140b9118c1b14ebfbe570b3ce941e, type: 3}
   m_PrefabInstance: {fileID: 776195658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619487844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619487845}
+  - component: {fileID: 1619487846}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619487845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619487844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1719252601}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619487846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619487844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe270917e08bebc4bb5a907346cd5a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1068275477}
+  Fov0: 12
+  Fov1: 33
+  Motion: {fileID: 1988023645}
+  Displacement0: 3
+  Displacement1: 0.5
+  Rotation: {fileID: 1498728811}
+  Angle0: 120
+  Angle1: 30
+  Speed: 2
+  Action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3804f0c8-746b-43f5-a7fe-2332326347aa
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9ab5b065-c75e-4f87-ad61-53878c53ec03
+      m_Path: <Keyboard>/q
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &1635602233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +2924,7 @@ Transform:
   - {fileID: 1985136717}
   - {fileID: 1281688417}
   - {fileID: 989433354}
+  - {fileID: 1619487845}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769943410
@@ -3218,6 +3293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2014446144}
+  Speed: 2
   Action:
     m_Name: Action
     m_Type: 0

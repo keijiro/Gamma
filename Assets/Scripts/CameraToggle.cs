@@ -1,12 +1,11 @@
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Klak.Math;
 using Klak.Motion;
 
 namespace Gamma {
 
-public sealed class CameraInputHandler : MonoBehaviour
+public sealed class CameraToggleHandler : MonoBehaviour
 {
     [field:Space]
     [field:SerializeField] Camera Camera = null;
@@ -26,25 +25,10 @@ public sealed class CameraInputHandler : MonoBehaviour
     [field:Space]
     [field:SerializeField] float Speed = 0.5f;
 
-    [field:Space]
-    [field:SerializeField] InputAction Action = null;
-
     bool _active;
     float _param;
 
-    void OnEnable()
-    {
-        Action.performed += OnPerformed;
-        Action.Enable();
-    }
-
-    void OnDisable()
-    {
-        Action.Disable();
-        Action.performed -= OnPerformed;
-    }
-
-    void OnPerformed(InputAction.CallbackContext ctx)
+    public void Toggle()
       => _active = !_active;
 
     void Update()

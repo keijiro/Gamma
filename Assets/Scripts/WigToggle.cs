@@ -1,34 +1,20 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using BurstWig;
 using Klak.Math;
 
 namespace Gamma {
 
-public sealed class WigInputHandler : MonoBehaviour
+public sealed class WigToggle : MonoBehaviour
 {
     [field:SerializeField] WigController Target = null;
     [field:SerializeField] float Length0 = 0;
     [field:SerializeField] float Length1 = 1;
     [field:SerializeField] float Speed = 0.5f;
-    [field:SerializeField] InputAction Action = null;
 
     bool _active;
     float _param;
 
-    void OnEnable()
-    {
-        Action.performed += OnPerformed;
-        Action.Enable();
-    }
-
-    void OnDisable()
-    {
-        Action.Disable();
-        Action.performed -= OnPerformed;
-    }
-
-    void OnPerformed(InputAction.CallbackContext ctx)
+    public void Toggle()
       => _active = !_active;
 
     void Update()

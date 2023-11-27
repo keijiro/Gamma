@@ -1,21 +1,16 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using UnityEngine.VFX;
-using Klak.Math;
 
 namespace Gamma {
 
-public sealed class ThrottleInputHandler : MonoBehaviour
+public sealed class InputActionHandler : MonoBehaviour
 {
-    [field:Space]
-    [field:SerializeField] VisualEffect Target = null;
-    [field:SerializeField] float Speed = 0.5f;
-
     [field:Space]
     [field:SerializeField] InputAction Action = null;
 
-    bool _active;
-    float _param;
+    [field:Space]
+    [field:SerializeField] UnityEvent Event = null;
 
     void OnEnable()
     {
@@ -30,13 +25,7 @@ public sealed class ThrottleInputHandler : MonoBehaviour
     }
 
     void OnPerformed(InputAction.CallbackContext ctx)
-      => _active = !_active;
-
-    void Update()
-    {
-        _param = ExpTween.Step(_param, _active ? 1 : 0, Speed);
-        Target.SetFloat("Throttle", _param);
-    }
+      => Event.Invoke();
 }
 
 } // namespace Gamma

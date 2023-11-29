@@ -21,15 +21,15 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 5
   multiplier:
     m_OverrideState: 0
     m_Value: 1
   upperHemisphereLuxValue:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   upperHemisphereLuxColor:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
   desiredLuxValue:
     m_OverrideState: 0

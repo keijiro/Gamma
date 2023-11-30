@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "com.unity.ugui": "2.0.0",
+    "jp.keijiro.osc-jack": "2.0.0"
+  },
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    }
+  ]
+}

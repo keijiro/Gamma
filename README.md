@@ -2,6 +2,7 @@ Gamma
 =====
 
 ![gif](https://github.com/keijiro/Gamma/assets/343936/afb6f4b3-0fdf-4229-b318-3399b61d83f4)
+![gif](https://github.com/keijiro/Gamma/assets/343936/324894cc-cf51-45c7-b3cc-8727c2e9f285)
 
 Gamma is a live coding project with KodeLife and Unity.
 
